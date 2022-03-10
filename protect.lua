@@ -68,3 +68,4 @@ Player.Chatted:Connect(function(Message)
 		end
 	end
 end)
+print("protection ran succesful")
