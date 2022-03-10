@@ -13,6 +13,7 @@ end
 
 
 Player.CharacterAdded:Connect(function()
+	print("respawned")
 	Player.Chatted:Connect(function(Message)
 		if string.len(Message) <= 1 then return end
 		Message = string.split(Message, " ")
