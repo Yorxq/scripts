@@ -1,5 +1,5 @@
 -----------------------------------------
-				--BY 36--
+		--BY 36--
 -----------------------------------------
 
 --Customization
@@ -151,6 +151,19 @@ local function initLogic(char)
 				end 
 			end
 		end
+	end))
+
+    --speed
+    mainMaid:GiveTask(runService.Heartbeat:connect(function()
+		if library.flags.Speed then
+            if Humanoid.WalkSpeed ~= 55 then
+                Humanoid.WalkSpeed = 55
+            end
+        else
+            if Humanoid.WalkSpeed ~= 16 then
+                Humanoid.WalkSpeed = 16
+            end
+        end
 	end))
 
     --Whitelist Commands
